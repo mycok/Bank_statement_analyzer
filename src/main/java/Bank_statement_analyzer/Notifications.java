@@ -3,6 +3,9 @@ package Bank_statement_analyzer;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 
+ */
 public class Notifications {
     private final List<String> errors = new ArrayList<>();
 

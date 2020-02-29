@@ -25,11 +25,11 @@ public class BankStatementCSVParser implements BankStatementParser {
         if (notifications.hasErrors()) {
             //  return and display the errors from notifications class
         }
-
+        // parse the column values to the match the expected BankTransaction variable types
         final LocalDate date = LocalDate.parse(columns[0], DATE_PAATTERN);
         final var amount = Double.parseDouble(columns[1]);
         final var description = columns[2];
-
+        // return a BankTransaction object
         return new BankTransaction(date, amount, description);
     }
 

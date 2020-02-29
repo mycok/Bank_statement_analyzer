@@ -4,6 +4,13 @@ import java.time.DateTimeException;
 import java.time.LocalDate;
 
 public class Validate {
+    /**
+     * 
+     * @param date
+     * @param amount
+     * @param description
+     * @return
+     */
     public Notifications validate(final String date, final String amount, final String description) {
         final Notifications notifications = new Notifications();
 
