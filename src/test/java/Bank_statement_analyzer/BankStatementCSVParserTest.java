@@ -7,7 +7,7 @@ import static org.junit.Assert.*;
 
 public class BankStatementCSVParserTest {
     private final BankStatementParser statementParser = new BankStatementCSVParser();
-    
+    // use the @Test annotation so that the Junit library can run the annotated method as a test case
     @Test
     public void shouldParseOneCorrectLine() throws Exception {
         /*

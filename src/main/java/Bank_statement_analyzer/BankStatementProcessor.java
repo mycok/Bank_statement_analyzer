@@ -75,14 +75,14 @@ public class BankStatementProcessor {
 
     // lambda expression implementations for BanktransactionsFilter interface
     public List<BankTransaction> findTransactions(final BankTransactionFilter bankTransactionFilter) {
-        final List<BankTransaction> bankTransactions = new ArrayList<>();
+        final List<BankTransaction> filteredBankTransactions = new ArrayList<>();
         for (final BankTransaction bankTransaction: bankTransactions) {
             if (bankTransactionFilter.test(bankTransaction)) {
-                bankTransactions.add(bankTransaction);
+                filteredBankTransactions.add(bankTransaction);
             }
         }
 
-        return bankTransactions;
+        return filteredBankTransactions;
     }
 
     public List<BankTransaction> findTransactionsForMonth(final Month month) {

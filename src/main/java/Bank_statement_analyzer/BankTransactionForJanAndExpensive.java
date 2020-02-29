@@ -2,10 +2,14 @@ package Bank_statement_analyzer;
 
 import java.time.Month;
 
-/*
-To use the BankFilterFilter interface with the findTransactions method,
-we need to create a class to implement the test interface method and then
-pass an instance of this class to the findTransactions method along with the test implementation
+/**
+ * 
+ * @param bankTransaction
+ * @return oolean
+ * 
+ * To use the BankFilterFilter interface with the findTransactions method,
+    we need to create a class to implement the test interface method and then
+    pass an instance of this class to the findTransactions method along with the test implementation
  */
 
 public class BankTransactionForJanAndExpensive implements BankTransactionFilter {
